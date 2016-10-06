@@ -1,7 +1,7 @@
 <DOCTYPE! html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>MyMagicMirror</title>
     <meta name="description" content="My Magic Mirror">
     <!-- <meta http-equiv="refresh" content="1800" /> -->
@@ -18,7 +18,8 @@
             $parsed_json = json_decode($json_string);
             $location = $parsed_json->{'location'}->{'city'};
             $temp_c = $parsed_json->{'current_observation'}->{'temp_c'};
-            echo "<h1>"."${temp_c}"."&deg;C</h1><h2>"."${location}"."</h2>"; 
+            $condition = $parsed_json->{'current_observation'}->{'weather'};
+            echo "<h1>"."${temp_c}"."&deg;C</h1><h2>"."${condition}"."<br/>"."${location}"."</h2>"; 
         ?>        
         </div>
     </div>
