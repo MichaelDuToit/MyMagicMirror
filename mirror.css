@@ -1,0 +1,24 @@
+body {
+    background:#000;
+    font-family: 'Tahoma';
+    color: #fff;
+    padding:0% 1%;
+}
+h1 {
+    font-size:8em;
+    margin:0;
+}
+h2 {
+    font-size:2em;
+    margin:0;
+}
+.upper-left {
+    float:left;
+    text-align:left;
+    display:inline-block;
+}
+.upper-right {
+    float:right;
+    text-align:right;
+    display:inline-block;
+}
